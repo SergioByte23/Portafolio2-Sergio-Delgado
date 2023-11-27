@@ -52,21 +52,21 @@ const Main = () => {
                 </div>
                 <section className="main__Section main__Section--form">
                     <section className="section__section--form">
-                        <form className="form-contact" name="contact" netlify>
+                        <form className="form-contact" action="https://formsubmit.co/e6781f7040bf3eb20c6609fa6db30f86" name="contact" method="POST">
                             <div className="form-group form-group1 ">
-                                <label for="">Name</label>
+                                <label htmlFor="">Name</label>
                                 <input type="text" name="name" id="name" />
                             </div>
                             <div className="form-group form-group2">
-                                <label for="">Email</label>
+                                <label htmlFor="">Email</label>
                                 <input type="email" name="email" id="email" />
                             </div>
                             <div className="form-group form-group3">
-                                <label for="">Message</label>
+                                <label  htmlFor="">Message</label>
                                 <textarea maxlength="200" rows="4" name="message" id="message"></textarea>
                             </div>
                             <div className="form-group form-group4">
-                                <button name="submit" id="submit">Send</button>
+                                <button name="submit" formTarget=''>Send</button>
                             </div>
                         </form>
                     </section>
