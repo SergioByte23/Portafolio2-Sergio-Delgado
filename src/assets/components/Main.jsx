@@ -48,7 +48,7 @@ const Main = () => {
 
                 <div className='section__div__mayor'>
                     <h3 className="main__subtitle__form">Let's talk</h3>
-                    <img className="main__img img--square" src="/public/imagen4.svg" alt="" />
+                    <img className="main__img img--square" src="/imagen4.svg" alt="" />
                 </div>
                 <section className="main__Section main__Section--form">
                     <section className="section__section--form">
