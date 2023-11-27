@@ -1,0 +1,78 @@
+.nav__div{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 13px 11px;
+    color: var(--color-principal);
+    width: 100%;
+    height: 15vh;
+    top: 0;
+    z-index: 100000;
+    background-color:  var(--color-dark-blue);
+    
+}
+.nav__subtitle{
+    width: 90px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    padding: 11px 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    
+}
+.nav__letter{
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-right: 1.5vw;
+}
+
+.nav__ul{
+    width:70px;
+    z-index: 11000;
+    position: fixed;
+    right: 0;    
+    display: flex;
+    /* align-self: flex-end; */
+    
+    top: 15vh;
+    height: 79vh;
+    gap: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-white);
+    transition: right 0.5s;    
+    /* background-color:  var(--color-dark-blue); */
+    
+    /* margin-right: 40px; */
+}
+
+.nav__ul li{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    transform: rotate(90deg);
+    margin: 0;
+    padding: 0;
+   
+    text-align: center;
+}
+/* .nav__ul li:hover{
+    transition: 0.1s;
+    height: 130px;
+    
+} */
+
+ .nav__ul__a{
+    /* width: 110px;
+    height: 100%; */
+    transition: 0.8s;
+    color: var(--color-white);
+ }
+ .nav__ul__a:hover{
+    transition: 0.8;
+    font-size: 1.2rem;
+ }
+ 
+ 
