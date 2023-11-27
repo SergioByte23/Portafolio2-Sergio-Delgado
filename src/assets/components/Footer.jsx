@@ -9,17 +9,17 @@ const Footer = () => {
                 <ul className="footer-links">
                     <li className='footer__ul__li'>
                         <a className="footer__icon" href="https://github.com/SergioByte23" target="blank">
-                            <img className='footer__img github' src="/public/git.png" alt="github" />
+                            <img className='footer__img github' src="/git.png" alt="github" />
                         </a>
                     </li>
                     <li className='footer__ul__li'>
                         <a className="footer__icon" href="https://www.linkedin.com/in/sergio-delgado-maco-397583165/" target="blank">
-                            <img className='footer__img linkedin' src="/public/in.png" alt="linkedin" />
+                            <img className='footer__img linkedin' src="/in.png" alt="linkedin" />
                         </a>
                     </li>
                     <li className='footer__ul__li'>
                         <a className="footer__icon" href="https://www.instagram.com/sergiodelgadomaco/" target="blank">
-                            <img className='footer__img ig' src="/public/ig.png" alt="instagram" />
+                            <img className='footer__img ig' src="ig.png" alt="instagram" />
                         </a>
                     </li>
                 </ul>
