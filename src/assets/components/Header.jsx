@@ -4,7 +4,7 @@ const Header = () => {
   return (
     < >
       <section className="header__section"  id='about'>
-        <div className="section__div" >
+        <div className="section__div section__div--imgavatar" >
           <h3 className="header__subtitle">About me</h3>
           <img className="header__img img--avatar" src="/imagen2.svg" alt="" />
           <img className="header__img img--circle" src="/imagen1.svg" alt="" />

@@ -1,4 +1,4 @@
-.header__section{
+.header__section {
     color: var(--color-white);
     display: flex;
     padding-top: 20vh;
@@ -6,46 +6,53 @@
     height: 100vh;
     background-color: transparent;
     margin-left: 5vw;
-    
-    
-}
-.section__div{
-    width: 50%;
-    height: 85vh;
-}
-.header__img{
-    width: 100%;
-    height: 100% ;
-    padding: 0;
-        
+
+
 }
 
-.img--avatar{
+.section__div {
+    width: 50%;
+    height: 85vh;
+    max-height: 800px;
+}
+
+.header__img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+}
+
+.img--avatar {
     position: relative;
     z-index: 100;
     transition: 2s;
-    
+
 }
-.img--avatar:hover{
+
+.img--avatar:hover {
     transition: 0.5;
     scale: 1.1;
-    
+
 }
-.img--circle{    
-position: relative;
-   
-   margin-top:-650px;
-   
-   z-index: 99;
-   
+
+.img--circle {
+    position: relative;
+
+    margin-top: -650px;
+
+    z-index: 99;
+
 }
-.header__subtitle{
+
+.header__subtitle {
     margin-left: 10vw;
     margin-bottom: -2vh;
 }
+
 /****************** */
 
-.header__block{
+.header__block {
     position: relative;
     background-color: var(--color-container);
     border-radius: 2rem;
@@ -56,12 +63,12 @@ position: relative;
     gap: 1rem;
     padding: 2rem;
     flex-direction: column;
-    
-    
+    justify-content: center;  
     margin-top: 20vh;
     z-index: 100;
 }
-.header__title{
+
+.header__title {
     background: none;
     padding: 0;
     margin: 0;
@@ -69,35 +76,38 @@ position: relative;
     font-size: 2em;
     margin-bottom: 10px;
 }
-.header__paragraph{
+
+.header__paragraph {
     width: 80%;
     background: none;
     margin: 0;
     padding: 0;
     color: var(--color-text);
     font-family: 'Sen', sans-serif;
-   
+
 }
 
-.box_icons{
+.box_icons {
     margin-top: 10px;
     width: 80%;
-    display: flex;    
+    display: flex;
     gap: 0.8rem;
-    
-    
+
+
 }
-.header__ul__li{
+
+.header__ul__li {
     width: 10%;
 }
-.header__img__icon{
+
+.header__img__icon {
     display: block;
     width: 30px;
 }
 
 /******************************************* */
 @media (max-width: 1000px) {
-    .header__block{
+    .header__block {
         position: relative;
         background-color: var(--color-container);
         border-radius: 2rem;
@@ -108,55 +118,64 @@ position: relative;
         gap: 0.7rem;
         padding: 2rem;
         flex-direction: column;
-        
-        
         margin-top: 20vh;
         z-index: 100;
     }
-    .header__title{                
+
+    .header__title {
         font-size: 1.5em;
     }
-    .header__paragraph{
-        font-size: 0.9em; 
+
+    .header__paragraph {
+        font-size: 0.9em;
         width: 90%;
     }
-    .header__ul__li{
+
+    .header__ul__li {
         width: 30px;
     }
 }
+
 @media (max-width: 800px) {
-    .header__block{
+    .header__block {
         gap: 0.2rem;
         height: 52%;
     }
-    .header__img__icon{
+
+    .header__img__icon {
         display: block;
         width: 30px;
     }
-    
+
 }
+
 @media (max-width: 720px) {
-    .header__block{
-        
+    .header__block {
+
         gap: 0.5rem;
         height: 60%;
     }
-    .header__img__icon{
+
+    .header__img__icon {
         display: block;
         width: 25px;
     }
-    .header__block{
+
+    .header__block {
         gap: 0.1rem;
         height: 60%;
     }
-    .header__title{    
-        margin-top: 10px;            
+
+    .header__title {
+        margin-top: 10px;
         font-size: 1.2em;
     }
-    .header__paragraph{
-        font-size: 0.92em; 
+
+    .header__paragraph {
+        font-size: 0.92em;
     }
-    .header__img__icon{
+
+    .header__img__icon {
         display: block;
         width: 25px;
     }
@@ -166,48 +185,141 @@ position: relative;
 
 
 @media (max-width: 600px) {
-    .header__block{
+    .header__block {
         gap: 0.1rem;
         height: 60%;
     }
-    .header__title{                
+
+    .header__title {
         font-size: 1em;
     }
-    .header__paragraph{
-        font-size: 0.8em; 
+
+    .header__paragraph {
+        font-size: 0.8em;
     }
-    .header__img__icon{
+
+    .header__img__icon {
         display: block;
         width: 20px;
     }
 }
-
-@media (max-height: 300px) {
-    .header__block{
-        position: relative;
-        background-color: var(--color-container);
-        border-radius: 2rem;
+@media (max-width: 490px) {
+    .header__section {
+        color: var(--color-white);
         display: flex;
-        width: 90%;
-        height: 90%;
-        /* max-width: 800px; */
-        gap: 0rem;
-        padding: 2rem;
         flex-direction: column;
-        justify-content: center;
-        margin-top: 0;
-        z-index: 100;
-    }
-    .header__title{                
-        margin: 0;
-    }
-    .header__paragraph{
+        padding-top: 20vh;
+        width: 90vw;
+        height: 80vh;
+        background-color: transparent;
+        margin-left: 5vw;
+        margin-bottom: 10vh;      
         
-       font-size: 0.5rem;
-       
+    }
+    .section__div {
+        width: 100%;
+        height: 85vh;
+        margin-left: 25px
+    }
+    .section__div--imgavatar{
+        width: 70%;
+    }
+    .section__block{
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        margin-top: 25vh;
+              
     }
     
 }
-@media (max-height: 300px) {
-
+@media (max-width: 290px) {
+    .section__block{        
+        height: 70%;                      
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********ALTURA*********** */
+@media (min-height: 800px) {
+.header__block {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-height: 570px) {
+    .header__block {        
+        width: 90%;
+        height: 60%;
+        gap: 0rem;
+        padding: 2rem;        
+        justify-content: center;
+        margin-top: 100px;
+        z-index: 100;
+    }   
+    .header__title {
+        margin: 0;
+    }
+
+    .header__paragraph {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+}@media (max-height: 450px) {
+    .header__block {
+        height: 60%;
+        margin-top: 60px;
+    }
+}
+@media (max-height: 350px) {
+    .header__block {        
+        display: flex;
+        width: 90%;
+        height: 85%;
+        gap: 0rem;
+        padding: 2rem;        
+        margin-top: 30px;
+        z-index: 100;
+    }     
+}
+

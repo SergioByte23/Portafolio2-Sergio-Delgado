@@ -1,6 +1,8 @@
+import Contac from './Contac'
 import './styles/Main.css'
 
 const Main = () => {
+    
     return (
         <>
             <section className='main__section__major main--last-proyects' id='portfolio' >
@@ -11,6 +13,18 @@ const Main = () => {
                 </div>
                 <section className="main__Section main--last-proyects-box" >
                     <section className="main__section__section" >
+                    <div className="main__section__div">
+                            <h3 className='section__subtitle'>Pokedex</h3>
+                            <a className="section__a" href="https://trabajo05-react-pq14xzkib-sergio-delgados-projects.vercel.app/#/pokedex" target="_blank">
+                                <img className="main__section__img" src="/Pokedex.png" alt="f" />
+                            </a>
+                        </div>
+                        <div className="main__section__div">
+                            <h3 className='section__subtitle'>Create Users</h3>
+                            <a className="section__a" href="https://trabajo04-react-lz26xeb68-sergio-delgados-projects.vercel.app/" target="_blank">
+                                <img className="main__section__img" src="/CreateUsers.png" alt="f" />
+                            </a>
+                        </div>
                         <div className="main__section__div">
                             <h3 className='section__subtitle'>Wiki app</h3>
                             <a className="section__a" href="https://trabajo03-react.vercel.app/" target="_blank">
@@ -30,17 +44,12 @@ const Main = () => {
                             </a>
                         </div>
                         <div className="main__section__div">
-                            <h3 className='section__subtitle'>Galleta de la fortuna</h3>
+                            <h3 className='section__subtitle'>Fortune</h3>
                             <a className="section__a" href="https://trabajo012-react.vercel.app/" target="_blank">
                                 <img className="main__section__img" src="/galletadelafortuna.png" alt="j" />
                             </a>
                         </div>
-                        <div className="main__section__div">
-                            <h3 className='section__subtitle'>Galleta de la fortuna</h3>
-                            <a className="section__a" href="https://trabajo012-react.vercel.app/" target="_blank">
-                                <img className="main__section__img" src="/galletadelafortuna.png" alt="j" />
-                            </a>
-                        </div>
+                        
                     </section>
                 </section>
             </section>
@@ -52,23 +61,9 @@ const Main = () => {
                 </div>
                 <section className="main__Section main__Section--form">
                     <section className="section__section--form">
-                        <form className="form-contact" action="https://formsubmit.co/e6781f7040bf3eb20c6609fa6db30f86" name="contact" method="POST">
-                            <div className="form-group form-group1 ">
-                                <label htmlFor="">Name</label>
-                                <input type="text" name="name" id="name" />
-                            </div>
-                            <div className="form-group form-group2">
-                                <label htmlFor="">Email</label>
-                                <input type="email" name="email" id="email" />
-                            </div>
-                            <div className="form-group form-group3">
-                                <label  htmlFor="">Message</label>
-                                <textarea maxlength="200" rows="4" name="message" id="message"></textarea>
-                            </div>
-                            <div className="form-group form-group4">
-                                <button name="submit" formTarget=''>Send</button>
-                            </div>
-                        </form>
+                        <Contac
+                                               
+                        />                        
                     </section>
                 </section>
             </section>

@@ -1,29 +1,54 @@
-
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import './styles/Contact.css'
 
 const Contac = () => {
+    const form = useRef();
+    const [isDisable, setIsDisable] = useState(true)
+  const sendEmail = (e) => {
+    e.preventDefault();
+// template_9pjc5yk
+    emailjs.sendForm('service_peigs0n', 'template_9pjc5yk', form.current, 'oY8kgLLUqQ3TiG8en')
+      .then((result) => {
+          console.log(result.text);
+          setIsDisable(false) 
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  const handleSent=()=>{
+    setIsDisable(false)
+  }
+  const handleScape=()=>{
+    setIsDisable(true)
+  }
     return (
-        <section className='contact__section' id="contact">
-            <h2 className='contact__h2'>Contacta me...</h2>
-            <form className='contact__form' action="https://formsubmit.co/ aquí escribes tu correo" method="POST" >
-                <label className='contact__label contact__name' htmlFor=""><span>Nombre</span>
-                    <input className='contact__input input__name' type="name" name="name" placeholder='Ingresa tu nombre' />
-                </label>
-                <label className='contact__label contact__email' htmlFor="">
-                    <span>Email</span>
-                    <input className='contact__input input__email' type="email" name="email" placeholder='Ingresa tu correo' />
-                </label>
-                <label className='contact__label contact__message' htmlFor="">
-                    <span>Mensaje</span>
-                    <textarea className='contact__input input__message' name="message" id="message" cols="30" rows="3" placeholder='Mensaje'></textarea>
-                </label>
-                <div>
-                <button className='contact__button' formTarget=''>
-                    <span className='contact__button--span'>Enviar </span>
-                    <i class='bx bx-right-arrow-alt bx-flip-vertical bx-flashing' ></i>
-                </button>
-                </div>
-            </form>
-        </section>
+        <> 
+        <div className='form__Delgado'>
+        <form className="form-contact" ref={form} onSubmit={sendEmail}>
+        <div className="form-group form-group1 ">
+            <label>Name</label>
+            <input type="text" name="user_name"required   />
+        </div>
+        <div className="form-group form-group2">
+            <label>Email</label>
+            <input type="email" name="user_email" required  />
+        </div>
+        <div className="form-group form-group3">
+            <label>Message</label>
+            <textarea name="message" required ></textarea>
+        </div>
+        <div className="form-group form-group4">
+            <input type="submit" value="Send"  />
+        </div>
+        </form>
+        <div className={`form-container ${isDisable && 'form__disablee'}`}>
+            <button className='contact__btn' onClick={handleScape}>X</button>
+            <h3 className='contact__h3'> Sent</h3>
+        </div>
+        </div>
+        </>
     )
 }
 export default Contac
