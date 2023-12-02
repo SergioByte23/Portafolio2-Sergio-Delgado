@@ -9,7 +9,7 @@ const Main = () => {
 
                 <div className='section__div__mayor'>
                     <h3 className="main__subtitle" >My last proyects</h3>
-                    <img className="main__img img--triangle" src="/public/imagen3.svg" alt="" />
+                    <img className="main__img img--triangle" src="/imagen3.svg" alt="" />
                 </div>
                 <section className="main__Section main--last-proyects-box" >
                     <section className="main__section__section" >

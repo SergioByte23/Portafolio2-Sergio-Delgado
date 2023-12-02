@@ -11,7 +11,7 @@ const Nav = () => {
     <div className='nav__div' >
     <span className='nav__subtitle'>SERGIO DELGADO</span> 
     <div className="icon-menu" onClick={handleDisguise} id="icon-menu">
-        <img className='nav__logo' src="/public/icon.png" alt="Logo" />
+        <img className='nav__logo' src="/icon.png" alt="Logo" />
     </div>
     <span className='nav__letter' >S</span>
     </div>
