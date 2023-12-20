@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div className="section__div section__block">
           <div className='header__block'>
-            <h1 className="header__title">Hi,I am Sergio</h1>
+            <h1 className="header__title">Hi,I am Sergio</h1>            
             <p className="header__paragraph">Im a web developer, committed, responsible and professional. With the ability to learn quickly, adapt to changes, good communication and friendly to work in a team! I will be happy to talk with you!</p>
             <ul className="box_icons">
             <li className='header__ul__li'>

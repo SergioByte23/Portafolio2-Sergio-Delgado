@@ -18,8 +18,8 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className='footer__ul__li'>
-                        <a className="footer__icon" href="https://www.instagram.com/sergiodelgadomaco/" target="blank">
-                            <img className='footer__img ig' src="ig.png" alt="instagram" />
+                        <a className="footer__icon" href="https://api.whatsapp.com/send/?phone=51920586679&text&type=phone_number&app_absent=0" target="blank">
+                            <img className='footer__img ig' src="/wsp.png" alt="whatsapp" />
                         </a>
                     </li>
                 </ul>

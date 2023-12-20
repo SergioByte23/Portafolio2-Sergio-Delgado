@@ -2,7 +2,7 @@ import Contac from './Contac'
 import './styles/Main.css'
 
 const Main = () => {
-    
+
     return (
         <>
             <section className='main__section__major main--last-proyects' id='portfolio' >
@@ -13,10 +13,12 @@ const Main = () => {
                 </div>
                 <section className="main__Section main--last-proyects-box" >
                     <section className="main__section__section" >
-                    <div className="main__section__div">
+                        <div className="main__section__div">
                             <h3 className='section__subtitle'>Pokedex</h3>
                             <a className="section__a" href="https://trabajo05-react-pq14xzkib-sergio-delgados-projects.vercel.app/#/pokedex" target="_blank">
-                                <img className="main__section__img" src="/Pokedex.png" alt="f" />
+                                <img className="main__section__img1" src="/Pokedex2.png" alt="f" />
+                                <img className="main__section__img2" src="/Pokedex2.png" alt="f" />
+                            
                             </a>
                         </div>
                         <div className="main__section__div">
@@ -49,7 +51,7 @@ const Main = () => {
                                 <img className="main__section__img" src="/galletadelafortuna.png" alt="j" />
                             </a>
                         </div>
-                        
+
                     </section>
                 </section>
             </section>
@@ -62,8 +64,8 @@ const Main = () => {
                 <section className="main__Section main__Section--form">
                     <section className="section__section--form">
                         <Contac
-                                               
-                        />                        
+
+                        />
                     </section>
                 </section>
             </section>
